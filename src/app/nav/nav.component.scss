@@ -1,0 +1,49 @@
+#nav-bar{
+    display: flex;
+    gap : 20px;
+    width: 100vw;
+    height: 4vh;
+    list-style: none;
+    align-items: center;
+    background-color: steelblue;
+    padding-left: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+#nav-bar >li{
+    transition: .3s;
+}
+
+#nav-bar >li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+li{
+    list-style: none;
+}
+div{
+    text-align: center;
+}
+a
+{
+    padding: 5px;
+}
+.droplist{
+    position:absolute;
+    background-color: steelblue;
+    width: fit-content;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+.dropItem{
+    color: aliceblue;
+}
+
+.dropItem:hover{
+    color: rgb(85, 83, 83);
+}

@@ -1,0 +1,10 @@
+<main>
+    <h2>Exo: Shopping List</h2>
+<label for="new">Nouveau Produit:</label>
+<div class="newProd">
+    <input id="new" type="text" [(ngModel)]="newProduct">
+    <button (click)="addProduct()" >add</button>
+</div>
+<app-cart [list]="cart" (removeEvent)="remove($event)"></app-cart>
+
+</main>

@@ -1,0 +1,8 @@
+<main><input type="text" [(ngModel)]= "input">
+    <h3>{{input}}</h3>
+    <div class="buttons">    
+        <button (click)="changeState('null')">Null!</button>
+        <button (click)="changeState('middle')">Middle!</button>
+        <button (click)="changeState('bon')">Bon!</button>
+    </div>
+    <p>Aujourd'hui je suis {{etat}}</p></main>

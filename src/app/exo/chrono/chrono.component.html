@@ -1,0 +1,13 @@
+<main>
+    <h1>Chronomètre</h1>
+
+    <div class="commandes">
+        <button (click)="start()" [disabled]="etat">Start</button>
+        <button (click)="stop()"[disabled]="!etat">Stop</button>
+        <button (click)="reset()">Reset</button>
+    </div>
+    
+    <div class="chrono">
+        <p>{{seconde | toChrono}}</p>
+    </div>
+</main>

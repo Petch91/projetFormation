@@ -1,0 +1,12 @@
+*{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+
+ul >li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}

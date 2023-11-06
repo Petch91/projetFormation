@@ -1,0 +1,15 @@
+<nav id="nav-bar">
+    <li><img src="../favicon.ico" alt="icone"></li>
+    <li routerLink="/home">Home</li>
+    <li *ngFor="let link of links"  >
+      <div (mouseenter)="changeVisibility(link.title)" (mouseleave)="changeVisibility(link.title)" >      
+        <a>{{link.title}}</a>
+        <ul *ngIf="link.IsVisible" class="droplist">
+            <li class="dropItem" *ngFor="let child of link.children" [routerLink]="child.url" (click)="changeVisibility(link.title)" >{{child.title}}</li>
+        </ul>
+      </div>
+
+    </li>
+
+
+  </nav>
